@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notes_app/widgets/custom_icon_search.dart';
+import 'package:notes/widgets/custom_icon_search.dart';
 
 class CustomAppBar extends StatelessWidget {
   final String title;

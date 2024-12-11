@@ -1,15 +1,19 @@
-name: notes_app
+name: notes
 description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
 version: 1.0.0+1
+
 environment:
-  sdk: ^3.5.1
+  sdk: ^3.5.4
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
   font_awesome_flutter: ^10.8.0
-  hive: ^2.2.3
+  hive:
   hive_flutter:
 
 dev_dependencies:
@@ -20,8 +24,15 @@ dev_dependencies:
 
   flutter_lints: ^4.0.0
 
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
 flutter:
 
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
@@ -41,9 +52,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-     - family: Poppins
-       fonts:
-         - asset: assets/fonts/Poppins-Regular.ttf
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
