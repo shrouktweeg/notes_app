@@ -4,8 +4,9 @@ import 'package:notes/constants.dart';
 class CustomTextFormField extends StatelessWidget {
   final String hint;
   final int maxLines;
+  final void Function(String)?onChange;
   final void Function(String?)? onSaved;
-  const CustomTextFormField({super.key,required this.hint,this.maxLines=1,this.onSaved});
+  const CustomTextFormField({super.key,required this.hint,this.maxLines=1,this.onSaved, this.onChange});
 
 
   @override
@@ -20,7 +21,7 @@ class CustomTextFormField extends StatelessWidget {
           return null;
         }
       } ,
-      onChanged: (value){},
+      onChanged: onChange,
       maxLines: maxLines,
       cursorColor: kPrimaryColor,
       decoration:InputDecoration(
