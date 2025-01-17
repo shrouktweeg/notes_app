@@ -33,7 +33,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
           CustomTextFormField(hint: 'Content',maxLines: 5,onSaved: (value){
             subTitle=value;
           },),
-          const SizedBox(height: 24,),
+          const SizedBox(height: 40,),
           const ColorListView(),
           const SizedBox(height: 40,),
           BlocBuilder<AddNoteCubit, AddNoteState>(
