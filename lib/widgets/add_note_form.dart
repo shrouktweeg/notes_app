@@ -62,6 +62,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
       setState(() {
       });
     }
+    return null;
   }
 }
 
